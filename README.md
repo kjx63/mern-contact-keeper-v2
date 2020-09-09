@@ -26,7 +26,13 @@
     - express-validator: [Docs](https://express-validator.github.io/docs/)
 
 - Register a User with
+
   - name
   - email
   - password [hashed]
     - bcryptjs [Docs](https://www.npmjs.com/package/bcryptjs)
+
+- When a user is registered, respond with a special token [Doc](https://jwt.io/)
+- Login rightaway when we register in React(front-end)
+
+  - we need to get the token sent to the front-end to access to the protected routes
