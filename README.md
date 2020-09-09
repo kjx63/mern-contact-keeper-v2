@@ -35,3 +35,8 @@
 - When a user is registered, respond with a special token [Doc](https://jwt.io/)
   - we need to get the token sent to the front-end to access to the protected routes
 - Login User and respond with jsonwebtoken returned
+
+- Auth Middleware & Protected Routes
+  - middleware that will allows us to send us the token within a header when we want to access to the protected routes
+  - get token from the req.hdear
+  - decode the token to get an id that is stored as a user'id

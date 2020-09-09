@@ -5,14 +5,24 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('config');
 
+const auth = require('../middleware/auth');
+
 const User = require('../models/User');
 
 // @route     GET api/auth
 // @desc      Get logged in user
 // @access    Private
 
-router.get('/', (req, res) => {
-  res.send('Get logged in user');
+router.get('/', auth, async (req, res) => {
+  try {
+    // get the user from the mongo DB by the user id
+    // If we send the correct token and we are logged in, "req" should have the user object attached to it with the current logged in user's ID
+    const user = await User.findById(req.user.id).select('-password');
+    res.json(user);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server error');
+  }
 });
 
 // @route     POST api/auth
