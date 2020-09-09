@@ -13,3 +13,13 @@
 - Create Config/db.js
 
   - use mongoose to connect to our database
+
+3. Backend Users, Contacts & JWT
+   Authentication
+
+- Goal: Register a User
+  - POST ('/api/users')
+  - Send data to the server
+    - `app.use(express.json({ extended: false }));`
+  - Data Validator
+    - express-validator: [Docs](https://express-validator.github.io/docs/)
