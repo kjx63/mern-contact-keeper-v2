@@ -61,3 +61,14 @@
 4. Client Side Setup & Contacts UI
 
 - npx create-react app and Set up Concurrently
+- install dependencies
+  - react-router-dom
+  - axios
+  - react-transition-group
+  - uuidv4
+- Modify App.css
+- Add FontAwesome
+- Add Navbar Component
+  - Navbar.defaultProps
+- React Router
+  - package: react-router-dom
