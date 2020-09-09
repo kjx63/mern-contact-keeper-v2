@@ -37,6 +37,11 @@
 - Login User and respond with jsonwebtoken returned
 
 - Auth Middleware & Protected Routes
+
   - middleware that will allows us to send us the token within a header when we want to access to the protected routes
   - get token from the req.hdear
   - decode the token to get an id that is stored as a user'id
+
+- Get all users Contacts
+  - @route Get api/contacts
+  - Find a user by user ID from Contact Model that matches the decoded token with id attached.
