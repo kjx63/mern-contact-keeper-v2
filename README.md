@@ -18,8 +18,15 @@
    Authentication
 
 - Goal: Register a User
+
   - POST ('/api/users')
   - Send data to the server
     - `app.use(express.json({ extended: false }));`
   - Data Validator
     - express-validator: [Docs](https://express-validator.github.io/docs/)
+
+- Register a User with
+  - name
+  - email
+  - password [hashed]
+    - bcryptjs [Docs](https://www.npmjs.com/package/bcryptjs)
