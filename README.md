@@ -57,3 +57,7 @@
 
 - Delete Contact
   - @route delete api/contacts/:id
+
+4. Client Side Setup & Contacts UI
+
+- npx create-react app and Set up Concurrently
