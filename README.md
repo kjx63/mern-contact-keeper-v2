@@ -48,5 +48,12 @@
   - Find a user by user ID from Contact Model that matches the decoded token with id attached.
 
 - Add Contacts
+
   - @route Post api/contacts
--
+
+- Update Contact
+
+  - @route put api/contacts/:id
+
+- Delete Contact
+  - @route delete api/contacts/:id
