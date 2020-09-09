@@ -43,5 +43,10 @@
   - decode the token to get an id that is stored as a user'id
 
 - Get all users Contacts
+
   - @route Get api/contacts
   - Find a user by user ID from Contact Model that matches the decoded token with id attached.
+
+- Add Contacts
+  - @route Post api/contacts
+-
