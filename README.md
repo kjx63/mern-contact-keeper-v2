@@ -2,9 +2,9 @@
 
 ## Step
 
-1. Express server setup with initial routes
+### 1. Express server setup with initial routes
 
-2. Connect MongoDB to our App
+### 2. Connect MongoDB to our App
 
 - Create Config/default.json for global variables
 
@@ -14,8 +14,9 @@
 
   - use mongoose to connect to our database
 
-3. Backend Users, Contacts & JWT
-   Authentication
+### 3. Backend Users, Contacts & JWT
+
+Authentication
 
 - Goal: Register a User
 
@@ -58,17 +59,32 @@
 - Delete Contact
   - @route delete api/contacts/:id
 
-4. Client Side Setup & Contacts UI
+### 4. Client Side Setup & Contacts UI
 
-- npx create-react app and Set up Concurrently
-- install dependencies
-  - react-router-dom
-  - axios
-  - react-transition-group
-  - uuidv4
-- Modify App.css
-- Add FontAwesome
-- Add Navbar Component
-  - Navbar.defaultProps
-- React Router
-  - package: react-router-dom
+- #### CleanUp, Navbar & Router Setup
+
+  - npx create-react app and Set up Concurrently
+
+    - install dependencies
+      - react-router-dom
+      - axios
+      - react-transition-group
+      - uuidv4
+    - Modify App.css
+    - Add FontAwesome
+    - Add Navbar Component
+      - Navbar.defaultProps
+    - React Router
+      - package: react-router-dom
+
+- Contacts Context & Global State
+
+  - Goal: Create a global state in the ContactState
+
+  - File Structures
+    - Context
+      - types.js
+      - contact
+        - ContactContext.js
+        - contactReducer.js
+        - ContactState.js
