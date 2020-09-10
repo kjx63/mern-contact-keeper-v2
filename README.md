@@ -88,3 +88,8 @@ Authentication
         - ContactContext.js
         - contactReducer.js
         - ContactState.js
+
+- Contacts & ContactItem Component
+  - 1. Goal: Access the global state from the Contacts Component and Show name of 3 hardcorded contacts from initial State in the Home Component
+    - useContext
+  - 2. Goal:
